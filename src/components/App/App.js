@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Header from '../Header/Header';
 import LandingPage from '../Pages/LandingPage/LandingPage';
@@ -21,8 +21,9 @@ const App = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={LandingPage} />
+        <Redirect from="/home" to="/" />
         <Route path="/about" component={AboutPage} />
-        <Route path="/contact" component={ContactPage} />
+        <Route path="/contactus" component={ContactPage} />
         <Route path="/news" component={NewsPage} />
         <Route path="/technologies" component={TechnologiesPage} />
         <Route component={NoMatchPage} />
