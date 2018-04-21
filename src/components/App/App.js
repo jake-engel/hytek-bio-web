@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-// import Butter from 'buttercms';
 
 import Header from '../Header/Header';
 import LandingPage from '../Pages/LandingPage/LandingPage';
@@ -10,13 +9,10 @@ import NewsPage from '../Pages/NewsPage/NewsPage';
 import TechnologiesPage from '../Pages/TechnologiesPage/TechnologiesPage';
 import NoMatchPage from '../Pages/NoMatchPage/NoMatchPage';
 import Footer from '../Footer/Footer';
-// import { butterCMSId } from '../../config/keys';
-
-// const butter = Butter(butterCMSId);
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Switch>
         <Route exact path="/" component={LandingPage} />
@@ -33,10 +29,3 @@ const App = () => {
 };
 
 export default App;
-
-// Sample CMS Retrieval
-// butter.content
-//   .retrieve(['test_content_label'])
-//   .then(function({ data: { data } }) {
-//     console.log(data);
-//   });

@@ -22,7 +22,7 @@ const Header = () => {
     <div className="navbar-hytek">
       <div className="navbar-hytek-logo">
         <Link to="/">
-          <img src="logo.png" alt="" />
+          <img src="logo.png" alt="HY-TEK Bio LLC Logo" />
         </Link>
       </div>
       <div className="navbar-hytek-logo" />
