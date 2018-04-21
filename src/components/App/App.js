@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
+// import Butter from 'buttercms';
 
 import Header from '../Header/Header';
 import LandingPage from '../Pages/LandingPage/LandingPage';
@@ -9,8 +10,6 @@ import NewsPage from '../Pages/NewsPage/NewsPage';
 import TechnologiesPage from '../Pages/TechnologiesPage/TechnologiesPage';
 import NoMatchPage from '../Pages/NoMatchPage/NoMatchPage';
 import Footer from '../Footer/Footer';
-// import Butter from 'buttercms';
-
 // import { butterCMSId } from '../../config/keys';
 
 // const butter = Butter(butterCMSId);
