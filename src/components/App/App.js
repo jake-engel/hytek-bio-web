@@ -16,9 +16,9 @@ const App = () => {
           <p>Hello World</p>
         </h2>
       </div>
-      <div>
+      <Switch>
         <Route path="/rand" component={RandPage} />
-      </div>
+      </Switch>
     </div>
   );
 };
