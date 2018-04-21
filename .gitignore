@@ -10,7 +10,10 @@
 /build
 
 # config
-/config
+src/config/dev.js
+src/config/keys.js
+src/config/prod.js
+src/config
 
 # misc
 .DS_Store
