@@ -1,6 +1,14 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import RandPage from '../Page/RandPage';
+import { Route, Switch } from 'react-router-dom';
+
+import Header from '../Header/Header';
+import LandingPage from '../Pages/LandingPage/LandingPage';
+import AboutPage from '../Pages/AboutPage/AboutPage';
+import ContactPage from '../Pages/ContactPage/ContactPage';
+import NewsPage from '../Pages/NewsPage/NewsPage';
+import TechnologiesPage from '../Pages/TechnologiesPage/TechnologiesPage';
+import NoMatchPage from '../Pages/NoMatchPage/NoMatchPage';
+import Footer from '../Footer/Footer';
 // import Butter from 'buttercms';
 
 // import { butterCMSId } from '../../config/keys';
@@ -10,15 +18,16 @@ import RandPage from '../Page/RandPage';
 const App = () => {
   return (
     <div>
-      <div>
-        <h2>
-          Hi there
-          <p>Hello World</p>
-        </h2>
-      </div>
+      <Header />
       <Switch>
-        <Route path="/rand" component={RandPage} />
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contactus" component={ContactPage} />
+        <Route path="/news" component={NewsPage} />
+        <Route path="/technologies" component={TechnologiesPage} />
+        <Route component={NoMatchPage} />
       </Switch>
+      <Footer />
     </div>
   );
 };

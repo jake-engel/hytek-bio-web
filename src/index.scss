@@ -3,3 +3,13 @@
 
 // IMPORT COMPONENT STYLESHEETS
 @import './components/App/App';
+@import './components/Footer/Footer';
+@import './components/Header/Header';
+
+// PAGES
+@import './components/Page/LandingPage/LandingPage';
+@import './components/Page/AboutPage/AboutPage';
+@import './components/Page/ContactPage/ContactPage';
+@import './components/Page/NewsPage/NewsPage';
+@import './components/Page/TechnologiesPage/TechnologiesPage';
+@import './components/Page/NoMatchPage/NoMatchPage';
